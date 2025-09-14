@@ -22,7 +22,7 @@ function App() {
   }, [favorites]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/youtube')
+    fetch('https://motivation-app-2.onrender.com/api/youtube')
       .then((res) => res.json())
       .then((data) => setVideos(data))
       .catch((err) => console.error('Error fetching videos:', err));
